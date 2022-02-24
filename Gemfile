@@ -37,6 +37,8 @@ gem 'devise-jwt'
 
 ## 환경변수 사용
 gem 'figaro'
+gem "therubyracer"
+gem "passenger"
 ## Devise JWT 인증
 gem 'jwt'
 

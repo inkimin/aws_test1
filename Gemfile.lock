@@ -191,6 +191,7 @@ GEM
       activerecord
       kaminari-core (= 1.2.2)
     kaminari-core (1.2.2)
+    libv8 (3.16.14.19-x86_64-linux)
     loofah (2.13.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -244,6 +245,9 @@ GEM
       oauth2 (~> 1.4)
       omniauth (>= 1.9, < 3)
     orm_adapter (0.5.0)
+    passenger (6.0.12)
+      rack
+      rake (>= 0.8.1)
     popper_js (2.9.3)
     public_suffix (4.0.6)
     puma (5.5.2)
@@ -286,6 +290,7 @@ GEM
       thor (~> 1.0)
       zeitwerk (~> 2.5)
     rake (13.0.6)
+    ref (2.0.0)
     regexp_parser (2.2.0)
     reline (0.3.1)
       io-console (~> 0.5)
@@ -320,6 +325,9 @@ GEM
     stimulus-rails (1.0.2)
       railties (>= 6.0.0)
     strscan (3.0.1)
+    therubyracer (0.12.3)
+      libv8 (~> 3.16.14.15)
+      ref
     thor (1.2.1)
     tilt (2.0.10)
     timeout (0.2.0)
@@ -373,6 +381,7 @@ DEPENDENCIES
   kaminari
   mysql2 (~> 0.5)
   omniauth-google-oauth2
+  passenger
   puma (~> 5.0)
   rack-cors
   rails (~> 7.0.1)
@@ -380,6 +389,7 @@ DEPENDENCIES
   selenium-webdriver
   sprockets-rails
   stimulus-rails
+  therubyracer
   turbo-rails
   tzinfo-data
   web-console
